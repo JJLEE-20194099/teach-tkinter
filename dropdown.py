@@ -15,9 +15,10 @@ options = [
 
 clicked = StringVar()
 
-clicked.set("Monday")
+clicked.set("Text is too long")
 
 drop = OptionMenu(root, clicked, *options)
+drop.config(width=20, anchor='w', padx=10, pady=20, highlightthickness=0)
 drop.pack()
 
 button = Button(master=root, text="click me", command=show)
